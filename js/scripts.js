@@ -38,18 +38,29 @@
 
 function newItem(){
 
-  //jQuery
-  //1. Adding a new item to the list of items: 
-     
-  //2. Crossing out an item from the list of items:
-     
-  //3(i). Adding the delete button "X": 
-      
-  //3(ii). Adding CLASS DELETE (DISPLAY: NONE) from the css:
-     
-  // 4. Reordering the items: 
+//jQuery
+//1. Adding a new item to the list of items:
+  let li=$('<li></li>');
+  let inputValue=$('#input').val();
+  let list=$('#list');
+
+  li.append(inputValue);
+
+  if(inputValue===''){
+    alert('It appears you forgot to add a task');
+  }else{
+    list.append(li);
+  } 
     
-  }
+//2. Crossing out an item from the list of items:
+    
+//3(i). Adding the delete button "X": 
+    
+//3(ii). Adding CLASS DELETE (DISPLAY: NONE) from the css:
+    
+// 4. Reordering the items: 
+  
+}
     
      
     
